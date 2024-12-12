@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="aider-install",
-    version="0.0.5",
+    version="0.0.6",
     packages=find_packages(),
     description="Installer for the aider AI pair programming CLI tool.",
     long_description=open("README.md").read(),
@@ -17,7 +17,7 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "uv",
+        "uv>=0.5.0",
     ],
     entry_points={
         'console_scripts': [
