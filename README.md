@@ -15,6 +15,7 @@ aider-install
 - Automatically installs Python 3.12 if not present
 - Uses [uv](https://docs.astral.sh/uv/) for fast, reliable Python package management
 - Zero configuration needed
+- The only packages installed to your original python environment are `uv` and the very minimal `aider-install` package. No other dependencies pollute your python environment.
 
 ## Requirements
 
@@ -24,8 +25,8 @@ aider-install
 ## How it works
 
 1. Running `python -m pip install aider-install` installs:
-  - The `aider-install` command.
-  - The uv python package as a dependency.
+  - The very minimal `aider-install` package, which provides the `aider-install` command.
+  - The uv python package as its only dependency.
 2. Running `aider-install` does this:
 
 ```bash
