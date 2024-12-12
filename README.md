@@ -1,6 +1,6 @@
 # aider-install
 
-A streamlined installer for the [Aider AI coding assistant](https://aider.chat).
+A streamlined installer for the [aider AI coding assistant](https://aider.chat).
 
 ## Quickly install aider
 
@@ -13,7 +13,7 @@ aider-install
 
 - Automatically installs Python 3.12 if not present
 - Uses [uv](https://docs.astral.sh/uv/) for fast, reliable Python package management
-- Sets up Aider with all dependencies in an isolated environment
+- Sets up aider with all dependencies in an isolated environment
 - Zero configuration needed
 
 ## Requirements
@@ -23,7 +23,8 @@ aider-install
 
 ## How it Works
 
-Installs `uv` as a dependency of the aider-install package and then runs:
+1. The `python -m pip install aider-install` installs uv as a dependency.
+2. Running `aider-install` does this:
 
 ```bash
 uv tool install --python python3.12 aider-chat
@@ -32,8 +33,8 @@ uv tool update-shell
 
 ## Documentation
 
-- [Aider Documentation](https://aider.chat)
-- [uv Package Manager](https://docs.astral.sh/uv/)
+- [Aider documentation](https://aider.chat)
+- [uv package manager](https://docs.astral.sh/uv/)
 
 ## Support
 
