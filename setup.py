@@ -4,7 +4,7 @@ setup(
     name="aider-install",
     version="0.0.5",
     packages=find_packages(),
-    description="Installer for the aider CLI tool.",
+    description=open("README.md").read(),
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Paul Gauthier",
