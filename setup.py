@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="aider-install",
-    version="0.0.4",
+    version="0.0.5",
     packages=find_packages(),
     description="Installer for the aider CLI tool.",
     long_description=open("README.md").read(),
