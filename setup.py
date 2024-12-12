@@ -9,7 +9,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Paul Gauthier",
     author_email="paul@aider.chat",
-    url="https://github.com/AiderAI/aider-install",
+    url="https://github.com/Aider-AI/aider-install",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
