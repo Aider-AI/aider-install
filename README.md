@@ -1,6 +1,6 @@
 # aider-install
 
-A streamlined installer for the [aider AI coding assistant](https://github.com/Aider-AI/aider-install).
+A streamlined installer for the [aider AI coding assistant](https://aider.chat).
 
 ## Quickly install aider
 
