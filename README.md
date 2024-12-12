@@ -23,7 +23,9 @@ aider-install
 
 ## How it works
 
-1. The `python -m pip install aider-install` installs uv as a dependency.
+1. Running `python -m pip install aider-install` installs:
+  - The `aider-install` command.
+  - The uv python package as a dependency.
 2. Running `aider-install` does this:
 
 ```bash
