@@ -11,9 +11,9 @@ aider-install
 
 ## Features
 
+- Sets up aider with all dependencies in an isolated environment
 - Automatically installs Python 3.12 if not present
 - Uses [uv](https://docs.astral.sh/uv/) for fast, reliable Python package management
-- Sets up aider with all dependencies in an isolated environment
 - Zero configuration needed
 
 ## Requirements
@@ -21,7 +21,7 @@ aider-install
 - macOS, Linux, or Windows
 - Python 3.8+ (Python 3.12 will be installed if needed)
 
-## How it Works
+## How it works
 
 1. The `python -m pip install aider-install` installs uv as a dependency.
 2. Running `aider-install` does this:
@@ -38,5 +38,5 @@ uv tool update-shell
 
 ## Support
 
-For issues with the installer, please open a GitHub issue.
+For issues with the installer, please [open a GitHub issue](https://github.com/Aider-AI/aider/issues).
 For aider usage questions, see the [aider documentation](https://aider.chat).
