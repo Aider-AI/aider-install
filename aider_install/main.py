@@ -1,10 +1,13 @@
 import subprocess
 import sys
+import uv
+import os
 
 def install_aider():
     try:
         subprocess.check_call([
-            "uv", "tool", "install",
+            os.fsdecode(uv.find_uv_bin()),
+            "tool", "install",
             "--python", "python3.12",
             "aider-chat",
         ])
