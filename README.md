@@ -11,12 +11,12 @@ aider-install
 
 ## Features
 
-- Sets up aider with all dependencies in an isolated environment
+- Sets up aider and its dependencies in an isolated environment
 - Automatically installs Python 3.12 if not present
 - Uses [uv](https://docs.astral.sh/uv/) for fast, reliable Python package management
 - Zero configuration needed
-- Only installs 2 packages in the original python environment: uv and aider-install.
-No other dependencies pollute your python environment.
+- Only 2 packages are installed in the original python environment: uv and aider-install.
+No other dependencies pollute your original python environment.
 
 ## Requirements
 
