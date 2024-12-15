@@ -9,7 +9,7 @@ def install_aider():
             os.fsdecode(uv.find_uv_bin()),
             "tool", "install",
             "--python", "python3.12",
-            "aider-chat",
+            "aider-chat@latest",
         ])
         subprocess.check_call(["uv", "tool", "update-shell"])
     except subprocess.CalledProcessError as e:
