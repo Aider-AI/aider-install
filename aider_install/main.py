@@ -17,4 +17,9 @@ def install_aider():
         sys.exit(1)
 
 
-# add a main() function ai!
+def main():
+    install_aider()
+
+
+if __name__ == "__main__":
+    main()
