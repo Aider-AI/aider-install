@@ -15,3 +15,6 @@ def install_aider():
     except subprocess.CalledProcessError as e:
         print(f"Failed to install aider: {e}")
         sys.exit(1)
+
+
+# add a main() function ai!
