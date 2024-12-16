@@ -5,13 +5,11 @@ import os
 
 def install_aider():
     try:
-        subprocess.check_call([
-            os.fsdecode(uv.find_uv_bin()),
-            "tool", "install",
-            "--python", "python3.12",
-            "aider-chat@latest",
-        ])
-        subprocess.check_call(["uv", "tool", "update-shell"])
+        subprocess.check_call(
+            f"{uv.find_uv_bin()} tool install --python python3.12 aider-chat@latest",
+            shell=True
+        )
+        subprocess.check_call("uv tool update-shell", shell=True)
     except subprocess.CalledProcessError as e:
         print(f"Failed to install aider: {e}")
         sys.exit(1)
