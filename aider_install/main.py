@@ -6,7 +6,7 @@ import os
 def install_aider():
     try:
         subprocess.check_call(
-            f"{uv.find_uv_bin()} tool install --python python3.12 aider-chat@latest",
+            f"{uv.find_uv_bin()} tool install --force --python python3.12 aider-chat@latest",
             shell=True
         )
         subprocess.check_call("uv tool update-shell", shell=True)
