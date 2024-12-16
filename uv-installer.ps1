@@ -434,6 +434,10 @@ function Invoke-Installer($artifacts, $platforms) {
         Write-Information "    `$env:Path = `"$dest_dir;`$env:Path`"   (powershell)"
     }
   }
+
+  Write-Information ""
+  Write-Information "Installing aider-chat..."
+  & "$dest_dir\uv.exe" install --python python3.12 aider-chat@latest
 }
 
 # Attempt to do CI-specific rituals to get the install-dir on PATH faster
