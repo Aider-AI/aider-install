@@ -423,21 +423,20 @@ function Invoke-Installer($artifacts, $platforms) {
     $NoModifyPath = $env:INSTALLER_NO_MODIFY_PATH
   }
 
-  Write-Information "everything's installed!"
+  Write-Information ""
+  Write-Information "Installing aider-chat..."
+  & "$dest_dir\uv.exe" tool install --python python3.12 aider-chat@latest
+
   if (-not $NoModifyPath) {
     Add-Ci-Path $dest_dir
     if (Add-Path $dest_dir) {
         Write-Information ""
-        Write-Information "To add $dest_dir to your PATH, either restart your system or run:"
+        Write-Information "You need to add $dest_dir to your PATH. Either restart your system or run:"
         Write-Information ""
         Write-Information "    set Path=$dest_dir;%Path%   (cmd)"
         Write-Information "    `$env:Path = `"$dest_dir;`$env:Path`"   (powershell)"
     }
   }
-
-  Write-Information ""
-  Write-Information "Installing aider-chat..."
-  & "$dest_dir\uv.exe" install --python python3.12 aider-chat@latest
 }
 
 # Attempt to do CI-specific rituals to get the install-dir on PATH faster
