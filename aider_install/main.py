@@ -7,7 +7,7 @@ def install_aider():
     try:
         uv_bin = uv.find_uv_bin()
         subprocess.check_call([
-            uv_bin, "tool", "install", "--force", "--python", "python3.12", "aider-chat@latest"
+            uv_bin, "tool", "install", "--force", "--python", "python3.12", "--with", "pip", "aider-chat@latest"
         ])
         subprocess.check_call([uv_bin, "tool", "update-shell"])
     except subprocess.CalledProcessError as e:
